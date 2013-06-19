@@ -35,13 +35,20 @@ bubblemap:
         How much is spent on the various functions of 
         government in total &mdash; and where?
     tree:
-        dataset: lastenrotterdam2013
+        dataset: ukgov-finances-cra
+        cuts:
+            - year:2010
         drilldowns:
-            - Beleidsveld
-            - Beleidsmatigeinspanning
-            - product
-	    - kostensoort
-            - kostenverdeling
+            - cofog1
+            - cofog2
+            - cofog3
+        breakdown: region
+        rootlabel: Total
+    map:
+        url: /img/gbr.svg
+        layer: GBR
+        key: region
+        legend: Expenditure on
 
 # Browser configurations
 # If you don't want the transaction browser set this to false
